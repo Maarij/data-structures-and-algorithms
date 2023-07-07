@@ -1,11 +1,12 @@
 package main.java;
 
+import main.java.service.GcdOfStrings1071;
 import main.java.service.MergeStringsAlternately1768;
 
 public class LeetCodeLauncher {
     public static void main(String[] args) {
-        MergeStringsAlternately1768 service = new MergeStringsAlternately1768();
+        GcdOfStrings1071 service = new GcdOfStrings1071();
 
-        System.out.println(service.mergeAlternately("ab", "pqrs"));
+        System.out.println(service.gcdOfStrings("LEET", "CODE"));
     }
 }
