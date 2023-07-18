@@ -1,4 +1,4 @@
-package main.java.service;
+package main.java.service.array;
 
 public class RemoveDuplicatesFromSortedArray26 {
 

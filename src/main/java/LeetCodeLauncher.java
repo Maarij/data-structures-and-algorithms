@@ -1,9 +1,6 @@
 package main.java;
 
-import main.java.service.BestTimeToBuyAndSellStock122;
-import main.java.service.GcdOfStrings1071;
-import main.java.service.MergeStringsAlternately1768;
-import main.java.service.RemoveDuplicatesFromSortedArray26;
+import main.java.service.array.RotateArray189;
 
 public class LeetCodeLauncher {
     public static void main(String[] args) {
@@ -15,5 +12,8 @@ public class LeetCodeLauncher {
 //        System.out.println(service.maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
 //        System.out.println(service.maxProfit(new int[]{1, 2, 3, 4, 5}));
 //        System.out.println(service.maxProfit(new int[]{7, 6, 4, 3, 1}));
+
+        RotateArray189 service = new RotateArray189();
+        service.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 3);
     }
 }
