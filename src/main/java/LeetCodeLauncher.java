@@ -2,6 +2,9 @@ package main.java;
 
 import main.java.service.array.ContainsDuplicate217;
 import main.java.service.array.RotateArray189;
+import main.java.service.array.TwoSum1;
+
+import java.util.Arrays;
 
 public class LeetCodeLauncher {
     public static void main(String[] args) {
@@ -17,7 +20,10 @@ public class LeetCodeLauncher {
 //        RotateArray189 service = new RotateArray189();
 //        service.rotate(new int[]{1, 2, 3, 4, 5, 6, 7}, 3);
 
-        ContainsDuplicate217 service = new ContainsDuplicate217();
-        System.out.println(service.containsDuplicate(new int[]{1, 2, 3, 4}));
+//        ContainsDuplicate217 service = new ContainsDuplicate217();
+//        System.out.println(service.containsDuplicate(new int[]{1, 2, 3, 4}));
+
+        TwoSum1 service = new TwoSum1();
+        System.out.println(Arrays.toString(service.twoSumAdvanced(new int[]{3, 2, 4}, 6)));
     }
 }
