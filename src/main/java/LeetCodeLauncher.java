@@ -27,8 +27,8 @@ public class LeetCodeLauncher {
 //        TwoSum1 service = new TwoSum1();
 //        System.out.println(Arrays.toString(service.twoSumAdvanced(new int[]{3, 2, 4}, 6)));
 
-        ReverseString344 service = new ReverseString344();
-        service.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'});
-        service.reverseString(new char[]{'h', 'a', 'n', 'n', 'a', 'h'});
+//        ReverseString344 service = new ReverseString344();
+//        service.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'});
+//        service.reverseString(new char[]{'h', 'a', 'n', 'n', 'a', 'h'});
     }
 }
