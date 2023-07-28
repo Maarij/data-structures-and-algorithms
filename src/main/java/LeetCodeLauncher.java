@@ -5,6 +5,7 @@ import main.java.service.array.RotateArray189;
 import main.java.service.array.TwoSum1;
 import main.java.service.string.FirstUniqueChar387;
 import main.java.service.string.ReverseString344;
+import main.java.service.string.ValidAnagram242;
 
 import java.util.Arrays;
 
@@ -32,7 +33,10 @@ public class LeetCodeLauncher {
 //        service.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'});
 //        service.reverseString(new char[]{'h', 'a', 'n', 'n', 'a', 'h'});
 
-        FirstUniqueChar387 service = new FirstUniqueChar387();
-        System.out.println(service.firstUniqueChar("leetcode"));
+//        FirstUniqueChar387 service = new FirstUniqueChar387();
+//        System.out.println(service.firstUniqueChar("leetcode"));
+
+        ValidAnagram242 service = new ValidAnagram242();
+        System.out.println(service.isAnagram("anagram", "nagaram"));
     }
 }
