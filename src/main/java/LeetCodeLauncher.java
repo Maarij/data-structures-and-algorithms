@@ -1,13 +1,6 @@
 package main.java;
 
-import main.java.service.array.ContainsDuplicate217;
-import main.java.service.array.RotateArray189;
-import main.java.service.array.TwoSum1;
-import main.java.service.string.FirstUniqueChar387;
-import main.java.service.string.ReverseString344;
-import main.java.service.string.ValidAnagram242;
-
-import java.util.Arrays;
+import main.java.service.string.ValidPalindrome125;
 
 public class LeetCodeLauncher {
     public static void main(String[] args) {
@@ -36,7 +29,11 @@ public class LeetCodeLauncher {
 //        FirstUniqueChar387 service = new FirstUniqueChar387();
 //        System.out.println(service.firstUniqueChar("leetcode"));
 
-        ValidAnagram242 service = new ValidAnagram242();
-        System.out.println(service.isAnagram("anagram", "nagaram"));
+//        ValidAnagram242 service = new ValidAnagram242();
+//        System.out.println(service.isAnagram("anagram", "nagaram"));
+
+        ValidPalindrome125 service = new ValidPalindrome125();
+        System.out.println(service.isPalindrome("raceacar"));
+        System.out.println(service.isPalindrome("amanaplanacanalpanama"));
     }
 }
