@@ -1,6 +1,8 @@
 package main.java.service.array;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 public class TwoSum1 {
 
@@ -31,19 +33,14 @@ public class TwoSum1 {
     // TC: O(n)
     // SC: O(n)
     public int[] twoSumAdvanced(int[] nums, int target) {
-        Hashtable<Integer, Integer> valuesSeen = new Hashtable<>(); // value, index
-
+        Map<Integer, Integer> numToIndex = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            int valueToSearchFor = Math.abs(target - nums[i]);
-
-            if (valuesSeen.containsKey(valueToSearchFor)) {
-                return new int[]{i, valuesSeen.get(valueToSearchFor)};
+            int complement = target - nums[i];
+            if (numToIndex.containsKey(complement)) {
+                return new int[] {numToIndex.get(complement), i};
             }
-
-            valuesSeen.put(nums[i], i);
+            numToIndex.put(nums[i], i);
         }
-
-
-        return new int[]{};
+        return new int[]{}; // No solution found!
     }
 }
