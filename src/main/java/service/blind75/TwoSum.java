@@ -16,6 +16,8 @@ public class TwoSum {
         System.out.println(indices);
     }
 
+    // TC: O(n)
+    // SC: O(n)
     public static int[] twoSumValuesSeen(int[] nums, int target) {
         Map<Integer, Integer> valuesSeen = new HashMap<>();
 
