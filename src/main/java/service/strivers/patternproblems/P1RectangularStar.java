@@ -2,6 +2,9 @@ package main.java.service.strivers.patternproblems;
 
 public class P1RectangularStar {
 
+    //***
+    //***
+    //***
     public static void main (String[] args) {
         int size = 3;
 

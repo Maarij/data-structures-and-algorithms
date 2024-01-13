@@ -1,6 +1,13 @@
 package main.java.service.strivers.patternproblems;
 
 public class P2RightAngledTriangle {
+
+    //*
+    //**
+    //***
+    //****
+    //*****
+    //******
     public static void main (String[] args) {
         int size = 6;
 

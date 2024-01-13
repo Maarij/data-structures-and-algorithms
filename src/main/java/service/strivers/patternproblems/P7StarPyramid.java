@@ -1,6 +1,13 @@
 package main.java.service.strivers.patternproblems;
 
 public class P7StarPyramid {
+
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+    //***********
     public static void main(String[] args) {
         int N = 6;
 
