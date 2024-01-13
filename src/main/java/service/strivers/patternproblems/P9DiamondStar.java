@@ -1,6 +1,6 @@
 package main.java.service.strivers.patternproblems;
 
-public class P9DiamondStarPattern {
+public class P9DiamondStar {
     public static void main(String[] args) {
         int N = 5;
 
