@@ -1,4 +1,4 @@
-package main.java.service.strivers;
+package main.java.service.strivers.patternproblems;
 
 public class P5InvertedRightPyramid {
     public static void main(String[] args) {
