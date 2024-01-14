@@ -1,4 +1,4 @@
-package main.java.service.glind75.week1;
+package main.java.service.grind75.week1;
 
 import java.util.HashMap;
 import java.util.Map;

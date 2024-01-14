@@ -1,4 +1,4 @@
-package main.java.service.glind75.week1;
+package main.java.service.grind75.week1;
 
 public class P4BestTimeToBuySellStock {
 
