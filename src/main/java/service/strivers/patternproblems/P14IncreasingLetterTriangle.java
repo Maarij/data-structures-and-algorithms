@@ -1,6 +1,11 @@
 package main.java.service.strivers.patternproblems;
 
 public class P14IncreasingLetterTriangle {
+    //A
+    //AB
+    //ABC
+    //ABCD
+    //ABCDE
     public static void main(String[] args) {
         char N = 5;
 

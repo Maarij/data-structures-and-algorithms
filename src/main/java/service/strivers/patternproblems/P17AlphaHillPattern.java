@@ -1,6 +1,11 @@
 package main.java.service.strivers.patternproblems;
 
 public class P17AlphaHillPattern {
+    //E
+    //DE
+    //CDE
+    //BCDE
+    //ABCDE
     public static void main(String[] args) {
         int N = 3;
 

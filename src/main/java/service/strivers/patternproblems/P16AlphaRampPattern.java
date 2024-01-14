@@ -1,6 +1,11 @@
 package main.java.service.strivers.patternproblems;
 
 public class P16AlphaRampPattern {
+    //A
+    //BB
+    //CCC
+    //DDDD
+    //EEEEE
     public static void main(String[] args) {
         int N = 5;
 

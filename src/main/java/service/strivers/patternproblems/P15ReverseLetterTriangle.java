@@ -1,6 +1,11 @@
 package main.java.service.strivers.patternproblems;
 
 public class P15ReverseLetterTriangle {
+    //ABCDE
+    //ABCD
+    //ABC
+    //AB
+    //A
     public static void main(String[] args){
         int N = 5;
 
