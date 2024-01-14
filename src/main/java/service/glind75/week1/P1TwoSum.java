@@ -1,9 +1,9 @@
-package main.java.service.blind75;
+package main.java.service.glind75.week1;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum {
+public class P1TwoSum {
 
     public static void main(String[] args) {
         int[] indices = twoSumValuesSeen(new int[]{2, 7, 11, 15}, 9);
@@ -29,22 +29,6 @@ public class TwoSum {
             }
 
             valuesSeen.put(nums[i], i);
-        }
-
-        throw new IllegalStateException();
-    }
-
-    public static int[] twoSumComplement(int[] nums, int target) {
-        Map<Integer, Integer> dictionary = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            dictionary.put(nums[i], i);
-        }
-
-        for (int i = 0; i < nums.length; i++) {
-            if (dictionary.containsKey(target - nums[i]) && i != dictionary.get(target - nums[i])) {
-                return new int[]{i, dictionary.get(target - nums[i])};
-            }
         }
 
         throw new IllegalStateException();

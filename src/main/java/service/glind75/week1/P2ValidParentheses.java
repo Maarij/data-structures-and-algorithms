@@ -1,8 +1,8 @@
-package main.java.service.blind75;
+package main.java.service.glind75.week1;
 
 import java.util.Stack;
 
-public class ValidParentheses {
+public class P2ValidParentheses {
 
     public static void main(String[] args) {
         System.out.println(isValid("((]"));

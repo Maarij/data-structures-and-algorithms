@@ -1,6 +1,6 @@
-package main.java.service.blind75;
+package main.java.service.glind75.week1;
 
-public class MergedTwoSortedLists {
+public class P3MergedTwoSortedLists {
 
     public static void main(String[] args) {
         ListNode list1A = new ListNode(1);
@@ -15,13 +15,20 @@ public class MergedTwoSortedLists {
         list2A.next = list2B;
         list2B.next = list2C;
 
-        ListNode head;
-//        head = mergeListsIterative(list1A, list2A);
-        head = mergeListsRecursive(list1A, list2A);
+        ListNode head = mergeListsRecursive(list1A, list2A);
+//        ListNode head = mergeListsIterative(list1A, list2A);\
 
-        return;
+        while (head.next != null) {
+            System.out.print(head.val);
+            head = head.next;
+        }
+        System.out.print(head.val);
     }
 
+    // 1 2 4
+    // 1 3 4
+    //
+    // 1 1 2 3 4 4
     private static ListNode mergeListsRecursive(ListNode list1, ListNode list2) {
         if (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
