@@ -1,6 +1,6 @@
 package main.java.service.strivers.patternproblems;
 
-public class P13IncreasingLetterTriangle {
+public class P14IncreasingLetterTriangle {
     public static void main(String[] args) {
         char N = 5;
 
