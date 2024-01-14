@@ -1,4 +1,4 @@
-package main.java.service.string;
+package main.java.service.leetCode.string;
 
 /**
  * You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting

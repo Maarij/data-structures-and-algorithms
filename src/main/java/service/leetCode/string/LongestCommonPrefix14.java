@@ -1,4 +1,4 @@
-package main.java.service.string;
+package main.java.service.leetCode.string;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package main.java.service.linkedlist;
+package main.java.service.leetCode.linkedlist;
 
 public class RemoveNthNode19 {
 

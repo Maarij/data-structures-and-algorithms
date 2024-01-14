@@ -1,4 +1,4 @@
-package main.java.service.array;
+package main.java.service.leetCode.array;
 
 public class RemoveDuplicatesFromSortedArray26 {
 

@@ -14,8 +14,8 @@ public class P5ValidPalindrome {
         int lastIndex = input.length() - 1;
 
         while (startIndex <= lastIndex) {
-            Character startChar = input.charAt(startIndex);
-            Character lastChar = input.charAt(lastIndex);
+            char startChar = input.charAt(startIndex);
+            char lastChar = input.charAt(lastIndex);
 
             if (!Character.isLetterOrDigit(startChar)) {
                 startIndex++;

@@ -1,4 +1,4 @@
-package main.java.service.array;
+package main.java.service.leetCode.array;
 
 import java.util.HashSet;
 import java.util.Set;

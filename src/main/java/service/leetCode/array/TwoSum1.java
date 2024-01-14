@@ -1,7 +1,6 @@
-package main.java.service.array;
+package main.java.service.leetCode.array;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
 
 public class TwoSum1 {
