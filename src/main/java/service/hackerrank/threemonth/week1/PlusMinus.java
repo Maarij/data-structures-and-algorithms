@@ -1,4 +1,4 @@
-package main.java.service.hackerrank.threemonth;
+package main.java.service.hackerrank.threemonth.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
