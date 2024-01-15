@@ -1,4 +1,4 @@
-package main.java.strivers.patternproblems;
+package main.java.strivers.step1.step2.patternproblems;
 
 public class P11BinaryNumberTriangle {
 

@@ -3,7 +3,7 @@ package main.java.hackerrank.threemonth.week1;
 import java.io.IOException;
 import java.util.List;
 
-public class MiniMaxSum {
+public class P2MiniMaxSum {
 
     public static void main(String[] args) throws IOException {
         List<Integer> arr = List.of(256741038, 623958417, 467905213, 714532089, 938071625);

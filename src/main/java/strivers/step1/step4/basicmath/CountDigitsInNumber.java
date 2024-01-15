@@ -1,4 +1,4 @@
-package main.java.strivers.basicmath;
+package main.java.strivers.step1.step4.basicmath;
 
 public class CountDigitsInNumber {
     public static void main(String[] args) {
