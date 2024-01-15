@@ -1,6 +1,6 @@
 package main.java.strivers.step1.step4.basicmath;
 
-public class ReverseANumber {
+public class P2ReverseANumber {
     public static void main(String[] args) {
         System.out.println(reverse(123));
     }

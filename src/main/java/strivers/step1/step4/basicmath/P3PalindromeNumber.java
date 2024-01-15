@@ -1,6 +1,6 @@
 package main.java.strivers.step1.step4.basicmath;
 
-public class PalindromeNumber {
+public class P3PalindromeNumber {
     public static void main(String[] args) {
         System.out.println(isPalindrome(1211));
     }
