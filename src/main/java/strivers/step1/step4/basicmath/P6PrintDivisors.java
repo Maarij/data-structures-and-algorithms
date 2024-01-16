@@ -2,7 +2,7 @@ package main.java.strivers.step1.step4.basicmath;
 
 public class P6PrintDivisors {
     public static void main(String[] args) {
-        printDivisors(36);
+        printDivisors(5);
     }
 
     private static void printDivisors(int n) {
