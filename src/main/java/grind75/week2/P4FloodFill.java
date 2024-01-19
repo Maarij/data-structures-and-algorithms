@@ -22,24 +22,21 @@ public class P4FloodFill {
     }
 
     private static int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        // starting location is same as color
-        if (image[sr][sc] != color) {
-            fill(image, sr, sc, color, image[sr][sc]);
+        if (image[sr][sc] == color) {
+            return image;
         }
+
+        fill(image, sr, sc, color, image[sr][sc]);
         return image;
     }
 
     private static void fill(int[][] image, int sr, int sc, int targetColor, int colorToReplace) {
-        // Base case checks: out of bounds or already visited
         if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length)
             return;
 
-        // Checking if the current pixel's color matches the targetColor for replacement
         if (image[sr][sc] == colorToReplace) {
-            // Changing the current pixel's color
             image[sr][sc] = targetColor;
 
-            // Recursive calls to adjacent pixels
             fill(image, sr + 1, sc, targetColor, colorToReplace);
             fill(image, sr - 1, sc, targetColor, colorToReplace);
             fill(image, sr, sc + 1, targetColor, colorToReplace);
