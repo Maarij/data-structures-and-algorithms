@@ -11,7 +11,7 @@ public class P8MockTestFindMedian {
     }
 
     public static int findMedian(List<Integer> arr) {
-        Collections.sort(arr, Comparator.comparingInt(o -> o));
+        arr.sort(Comparator.comparingInt(o -> o));
         return arr.get(arr.size()/2);
     }
 }
