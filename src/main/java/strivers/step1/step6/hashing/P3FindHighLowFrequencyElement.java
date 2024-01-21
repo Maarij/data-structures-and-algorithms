@@ -16,10 +16,7 @@ public class P3FindHighLowFrequencyElement {
             map.putIfAbsent(i, 1);
         }
 
-        int high = 0;
-        int highFrequency = 0;
-        int low = 0;
-        int lowFrequency = 0;
+        int high = 0, highFrequency = 0, low = 0, lowFrequency = 0;
         for (Integer k : map.keySet()) {
             if (highFrequency == 0 || highFrequency < map.get(k)) {
                 high = k;
