@@ -1,4 +1,4 @@
-package main.java.strivers.step2;
+package main.java.strivers.step1.step5.recursion;
 
 public class P6FactorialNNumbers {
     public static void main(String[] args){
