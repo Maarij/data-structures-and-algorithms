@@ -1,22 +1,25 @@
 package main.java.strivers.step3.step1;
 
+import java.util.Arrays;
+
 public class P1LargestElementInArray {
     public static void main(String[] args) {
-        System.out.println(findLargestElement(new int[]{2, 5, 1, 3, 0}));
+        System.out.println(Arrays.toString(findSecondMinMax(new int[]{1, 2, 4, 7, 7, 5})));
+        System.out.println(Arrays.toString(findSecondMinMax(new int[]{1})));
     }
 
-    private static int findLargestElement(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return -1;
+    private static int[] findSecondMinMax(int[] arr) {
+        if (arr == null) {
+            return null;
         }
 
-        if (arr.length == 1) return arr[0];
-
-        int max = Integer.MIN_VALUE;
-        for(int i : arr) {
-            if (i > max) max = i;
+        if (arr.length == 1) {
+            return new int[]{arr[0], arr[0]};
         }
 
-        return max;
+        int secondMax = Integer.MIN_VALUE;
+        int secondMin = Integer.MAX_VALUE;
+
+        return new int[]{secondMin, secondMax};
     }
 }
