@@ -14,10 +14,9 @@ public class P2LongestPalindrome {
         int longestPalindrome = 0;
 
         for (int i = 0; i < 128; i++) {
-            int val = count[i];
-            longestPalindrome += (val / 2) * 2;
+            longestPalindrome += (count[i] / 2) * 2;
 
-            if (longestPalindrome % 2 == 0 && val % 2 == 1)
+            if (longestPalindrome % 2 == 0 && count[i] % 2 == 1)
                 longestPalindrome++;
         }
 
