@@ -2,16 +2,16 @@ package main.java.grind75.week4;
 
 public class P1ClimbingStairs {
     public static void main(String[] args){
-        System.out.println(climbStairs(5));
+        System.out.println(climbStairs(3));
     }
 
     // 1 -> 1
-    // 2 -> 1/1, 1
+    // 2 -> 1/1, 2
     // 3 -> 1/1/1, 1/2, 2/1
     // 4 -> 1/1/1/1, 1/1/2, 1/2/1, 2/1/1, 2/2
     // 5 -> 1/1/1/1/1, 1/1/1/2, 1/1/2/1,
     private static int climbStairs(int n) {
-        if (n < 2)
+        if (n <= 2)
             return n;
 
         int[] ways = new int[n + 1];
