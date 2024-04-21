@@ -15,14 +15,13 @@ public class P3ReverseLinkedList {
         node3.next = node4;
         node4.next = node5;
 
-        ListNode listNode = reverseList(node1);
+        ListNode listNode = reverse(node1, null);
 
         while (listNode != null) {
             System.out.print(listNode.val + "->");
             listNode = listNode.next;
         }
     }
-
 
     // 1 -> 2 -> 3 -> 4 -> 5
     //
@@ -31,21 +30,18 @@ public class P3ReverseLinkedList {
     // 3
     // 2
     // 1
-    private static ListNode reverseList(ListNode head) {
-        return reverse(head, null);
-    }
-
     private static ListNode reverse(ListNode head, ListNode response) {
         if (head == null) {
             return response;
         }
+
         ListNode temp = head.next;
         head.next = response;
         response = head;
         head = temp;
+
         return reverse(head, response);
     }
-
 
     public static class ListNode {
         int val;
