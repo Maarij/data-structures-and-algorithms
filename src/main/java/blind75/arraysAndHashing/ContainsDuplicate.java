@@ -16,7 +16,7 @@ public class ContainsDuplicate {
         System.out.println(containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
     }
 
-    public static boolean containsDuplicate(int[] nums) {
+    private static boolean containsDuplicate(int[] nums) {
         HashSet<Integer> seen = new HashSet<>();
 
         for (int num : nums) {

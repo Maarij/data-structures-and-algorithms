@@ -12,7 +12,7 @@ public class ValidAnagram {
         System.out.println(isAnagram("rat", "car"));
     }
 
-    public static boolean isAnagram(String s, String t) {
+    private static boolean isAnagram(String s, String t) {
         int[] count = new int[26];
 
         for (char x : s.toCharArray()) {

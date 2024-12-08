@@ -24,7 +24,7 @@ public class TwoSum {
     }
 
     // TC: o(n)
-    public static int[] twoSum(int[] nums, int target) {
+    private static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> seen = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
