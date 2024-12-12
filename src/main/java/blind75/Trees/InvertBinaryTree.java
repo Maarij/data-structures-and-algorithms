@@ -18,6 +18,8 @@ public class InvertBinaryTree {
         invertTree(node1);
     }
 
+    // TC: o(n)
+    // SC: o(n)
     private static TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
