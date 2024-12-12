@@ -38,8 +38,8 @@ public class MergeTwoSortedLists {
         ListNode preHead = new ListNode(0);
         ListNode last = preHead;
 
-        while(list1 != null && list2 != null) {
-            if(list1.val > list2.val) {
+        while (list1 != null && list2 != null) {
+            if (list1.val > list2.val) {
                 last.next = list2;
                 list2 = list2.next;
             } else {
@@ -49,7 +49,7 @@ public class MergeTwoSortedLists {
             last = last.next;
         }
 
-        if(list1 == null) {
+        if (list1 == null) {
             last.next = list2;
         } else {
             last.next = list1;
