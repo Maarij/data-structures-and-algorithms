@@ -92,22 +92,3 @@
   * Scaling servers on memory or cpu consumption
   * Sharding databases based on usage (QPS math)
 * Can reduce read load on event database for views by adding cache (redis)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
