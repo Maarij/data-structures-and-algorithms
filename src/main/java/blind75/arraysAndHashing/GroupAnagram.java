@@ -12,13 +12,14 @@ public class GroupAnagram {
     public static void main(String[] args) {
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
 
-        List<List<String>> lists = groupAnagrams(strs);
+        List<List<String>> lists = groupAnagrams2(strs);
         lists.forEach(l -> {
             l.forEach(s -> System.out.print(s + " "));
             System.out.println();
         });
     }
 
+    // O(n∗k∗logk)
     private static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
@@ -35,5 +36,28 @@ public class GroupAnagram {
         }
 
         return new ArrayList<>(map.values());
+    }
+
+    // TC: o(n*k)
+    private static List<List<String>> groupAnagrams2(String[] strs) {
+        Map<String, List<String>> groups = new HashMap<>();
+
+        for (String s : strs) {
+            int[] count = new int[26];
+            for (char c : s.toCharArray()) {
+                count[c - 'a']++;
+            }
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 26; i++) {
+                if (count[i] != 0) {
+                    sb.append((char) ('a' + i)).append(count[i]);
+                }
+            }
+
+            groups.computeIfAbsent(sb.toString(), k -> new ArrayList<>()).add(s);
+        }
+
+        return new ArrayList<>(groups.values());
     }
 }
