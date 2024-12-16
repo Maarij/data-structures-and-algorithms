@@ -50,7 +50,7 @@
   * header: JWT | sessionToken
   * { body: ticketId, paymentDetails (stripe) }
 
-#### High-Level Design
+### High-Level Design
 ![ticketmaster.png](ticketmaster.png)
 * Client reaches API Gateway 
 * API Gateway routes to correct microservice
@@ -74,7 +74,7 @@
     * If lock goes down, detect and bring it up
       * Can add a check on database for status, whoever submits first wins
 
-#### Deep Dive
+### Deep Dive
 * Need a search optimized database instead of slow relational searches
 * Elasticsearch can build inverted index to make searching documents by term quick
   * Tokenizes strings and then mapped to work
