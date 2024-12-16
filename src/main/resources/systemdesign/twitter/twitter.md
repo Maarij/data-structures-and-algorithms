@@ -1,6 +1,11 @@
 # Twitter System Design
 
-## Functional Requirements
+## Design
+![twitter.png](twitter.png)
+
+## Requirements
+
+### Functional Requirements
 * Users should be able to create, edit, delete tweets
 * Users should be able to like, retweet, and reply to tweets
 * Users should be able to search for tweets
@@ -8,10 +13,8 @@
 * Users should be able to create an account and log in
 * Users should be able to follow other users
 
-## Design
-![twitter.png](twitter.png)
+## General Notes
 
-## Notes
 ### Client
 * Client represents all requests sent (web, mobile, etc...)
 * Client calls will hit the load balancer which is key to scalability
@@ -37,6 +40,7 @@
   * Timeline service
   * Profile service
 * Go through services to determine if each one is capable of fulfilling requirements
+
 #### Tweet Service
   * Functional
     * Create, edit, & delete
@@ -52,16 +56,19 @@
   * Rate limiter for excessive read/write protection and bot protection
 * Cache on read path for popular tweets (e.g.: Redis)
 * CDN for geographic performance boost on tweet content
+
 #### Reply Service
   * Stored in separate data store
     * This is done for scaling replies independently
     * Can scale replies faster than tweets since mostly see replies
   * Rate limiter on write path to limit bots
   * Index reply db by tweet id so they can be bundled with initial tweet to make it faster
+
 #### Search Service
   * Elasticsearch for fast full text search
     * CDC from tweet content document store to elasticsearch
   * Reverse index on tweet content, username, hashtags
+
 #### Timeline Service
   * Fanout-on-read vs fanout-on-write
   * With fanout-on-read we query list of accounts they follow, request tweets, sort, and return
@@ -74,6 +81,7 @@
     * This is more write intensive but reading is much faster thus prioritizing read speed
   * For users with millions of followers we can lean on fanout-on-read since it is much more intensive
   * A hybrid approach is fanout-on-write but also checking the high profile followers when retrieving data
+
 #### Profile Service
   * Opt for traditional relational database
   * Allows for efficient querying of structured user data while adhering to ACID (atomicity, consistency, isolation, durability)

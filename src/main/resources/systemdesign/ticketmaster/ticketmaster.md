@@ -1,10 +1,5 @@
 # Ticketmaster System Design
-* Broken down into following:
-  * Requirements
-  * Core Entities
-  * API
-  * High Level Design
-  * Deep Dives
+![ticketmaster.png](ticketmaster.png)
 
 ## Requirements
 
@@ -30,16 +25,16 @@
 * etc.
 * Think about reprioritizing once requirements are set to determine if any requirements should fall out of scope and vice versa
 
-### Core Entities & API
+## Core Entities & API
 * Think about what data is persisted and used by APIs
 
-#### Core Entities
+### Core Entities
 * Event
 * Venue
 * Performer
 * Ticket
 
-#### API
+### API
 * Create APIs to satisfy functional requirements and exchange core entities
 * GET /event/:eventId -> Event & Venue & Performer & Ticket[]
 * GET /search?term={term}&location={location}&type={type}&date={}... -> Partial\<Event\>[]
@@ -50,8 +45,7 @@
   * header: JWT | sessionToken
   * { body: ticketId, paymentDetails (stripe) }
 
-### High-Level Design
-![ticketmaster.png](ticketmaster.png)
+## High-Level Design
 * Client reaches API Gateway 
 * API Gateway routes to correct microservice
 * GET /event/:eventId
@@ -74,7 +68,7 @@
     * If lock goes down, detect and bring it up
       * Can add a check on database for status, whoever submits first wins
 
-### Deep Dive
+## Deep Dive
 * Need a search optimized database instead of slow relational searches
 * Elasticsearch can build inverted index to make searching documents by term quick
   * Tokenizes strings and then mapped to work
