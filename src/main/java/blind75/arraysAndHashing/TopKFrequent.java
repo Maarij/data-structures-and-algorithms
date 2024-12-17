@@ -26,6 +26,9 @@ public class TopKFrequent {
             freqMap.put(n, freqMap.getOrDefault(n, 0) + 1);
         }
 
+        // NOTE: if we know frequencies are unique we can use simple int[]
+        // but since we can have duplicated frequencies we need a way to store all duplicates
+        // that's why we use List<Integer>[] instead of simple int[]
         List<Integer>[] sortedArr = new List[nums.length + 1];
         for (int n : freqMap.keySet()) {
             int freq = freqMap.get(n);
