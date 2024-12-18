@@ -21,3 +21,7 @@ in the [patterns](src/main/resources/algorithms/patterns.md) page.
 * [Strivers](src/main/java/strivers)
   * https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems
 
+## Tools To Try
+* [hellointerview](https://www.hellointerview.com/)
+* [codemia](https://codemia.io/)
+
