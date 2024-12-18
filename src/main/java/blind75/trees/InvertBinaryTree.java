@@ -1,4 +1,4 @@
-package main.java.blind75.Trees;
+package main.java.blind75.trees;
 
 /**
  * <a href="https://leetcode.com/problems/invert-binary-tree/description/">226. Invert Binary Tree</a>

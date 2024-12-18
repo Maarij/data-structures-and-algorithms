@@ -1,4 +1,4 @@
-package main.java.blind75.Trees;
+package main.java.blind75.trees;
 
 /**
  * <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/description/">104. Maximum Depth of Binary Tree</a>

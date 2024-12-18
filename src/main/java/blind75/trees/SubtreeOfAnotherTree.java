@@ -1,4 +1,4 @@
-package main.java.blind75.Trees;
+package main.java.blind75.trees;
 
 /**
  * <a href="https://leetcode.com/problems/subtree-of-another-tree/description/">572. Subtree of Another Tree</a>

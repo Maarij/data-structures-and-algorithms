@@ -2,7 +2,7 @@
 This repo contains general practice for staying interview ready.
 
 ## System Design
-Each link below will contain notes of the design and particular points of interest
+Each link below contains a design diagram and notes on points of interest
 * [Twitter](src/main/resources/systemdesign/twitter/twitter.md)
 * [TicketMaster](src/main/resources/systemdesign/ticketmaster/ticketmaster.md)
 * [Banking Ledger](src/main/resources/systemdesign/bankingledger/bankingledger.md)

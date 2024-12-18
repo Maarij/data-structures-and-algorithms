@@ -1,4 +1,4 @@
-package main.java.blind75.Trees;
+package main.java.blind75.trees;
 
 public class TreeNode {
     int val;
