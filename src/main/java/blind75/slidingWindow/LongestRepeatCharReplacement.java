@@ -1,5 +1,7 @@
 package main.java.blind75.slidingWindow;
 
+import java.util.HashMap;
+
 /**
  * <a href="https://leetcode.com/problems/longest-repeating-character-replacement/description/">424. Longest Repeating Character Replacements</a>
  * <br>
@@ -15,17 +17,21 @@ public class LongestRepeatCharReplacement {
     }
 
     private static int characterReplacement(String s, int k) {
-        int[] count = new int[128];
-        int max = 0;
-        int start = 0;
+        HashMap<Character, Integer> count = new HashMap<>();
+        int res = 0;
 
-        for (int end = 0; end < s.length(); end++) {
-            max = Math.max(max, ++count[s.charAt(end)]);
+        int l = 0, maxf = 0;
+        for (int r = 0; r < s.length(); r++) {
+            count.put(s.charAt(r), count.getOrDefault(s.charAt(r), 0) + 1);
+            maxf = Math.max(maxf, count.get(s.charAt(r)));
 
-            if (max + k <= end - start)
-                count[s.charAt(start++)]--;
+            while ((r - l + 1) - maxf > k) {
+                count.put(s.charAt(l), count.get(s.charAt(l)) - 1);
+                l++;
+            }
+            res = Math.max(res, r - l + 1);
         }
 
-        return s.length() - start;
+        return res;
     }
 }
